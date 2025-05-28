@@ -1,1 +1,1 @@
-# long-walk-games
+# longwalkgames
