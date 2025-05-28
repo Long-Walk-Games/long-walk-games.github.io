@@ -1,7 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Official portfolio site for Long Walk Games." />
+  <title>Long Walk Games</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      background: #ffffff;
+      color: #111;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    header {
+      width: 100%;
+      padding: 2rem;
+      text-align: center;
+      border-bottom: 1px solid #eee;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    section {
+      width: 90%;
+      max-width: 800px;
+      padding: 2rem 1rem;
+    }
+    .gallery, .demos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+    .gallery img, .demos iframe {
+      width: 100%;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+  <header>
+    <h1>Long Walk Games</h1>
+    <p>Independent game studio sharing our first steps.</p>
+  </header>
+
+  <section>
+    <h2>Demos</h2>
+    <div class="demos">
+      <!-- Replace these with your actual demo links -->
+      <iframe src="https://www.example.com/demo" title="Game Demo" height="150"></iframe>
+    </div>
+  </section>
+
+  <section>
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <!-- Replace with your actual images -->
+      <img src="https://via.placeholder.com/400x225" alt="Game Screenshot">
+      <img src="https://via.placeholder.com/400x225" alt="Game Screenshot">
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Long Walk Games. All rights reserved.
+  </footer>
 </body>
 </html>
